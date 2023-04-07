@@ -11,5 +11,18 @@ Return true if the cuboid could have equal sides, return false otherwise.
 
     Return false for invalid numbers too (e.g volume or side is less than or equal to 0).
 
-Note: side will be an integer
+Note: side will be an integer --->  area of cuboid: 2 lw + 2 wh + 2hl, area of cube: 6a^2
  */
+
+const cubeChecker = (volume, side) => {
+    // calculate here
+    const ifCubeVol = Math.pow(side, 3);
+
+    if (ifCubeVol === volume && volume > 0 && side > 0) {
+        return true;
+    } else {
+        return false;
+    }
+};
+
+console.log(cubeChecker(-8, -2));

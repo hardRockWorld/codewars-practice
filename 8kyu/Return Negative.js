@@ -14,3 +14,9 @@ Zero (0) is not checked for any specific sign. Negative zeros make no mathematic
 const makeNegative = (num) => {
     return num <= 0 ? num : -num;
 };
+
+// alternative way:
+
+// const makeNegative = (num) => {
+//     return -Math.abs(num);
+// };
